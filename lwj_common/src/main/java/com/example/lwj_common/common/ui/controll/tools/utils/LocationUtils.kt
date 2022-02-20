@@ -14,9 +14,8 @@ import android.util.Log
 import java.lang.Exception
 import java.lang.RuntimeException
 import java.util.*
-import javax.inject.Inject
 
-class LocationUtils @Inject constructor() {
+class LocationUtils  constructor() {
     var timer1: Timer? = null
     var lm: LocationManager? = null
     var locationCallBack: LocationCallBack? = null
