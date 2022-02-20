@@ -4,7 +4,7 @@ plugins {
     id 'maven-publish'
 }
 group = 'com.github.captainGithubAccount'
-version = '2.0'
+version = '2.0.1'
 
 android {
     compileSdk 31
@@ -116,9 +116,9 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.githubAccount'
-                artifactId = 'android-example'
-                version = '2.0'
+                groupId = 'com.github.captainGithubAccount'
+                artifactId = Project.getName()
+                version = '2.0.1'
             }
         }
     }
